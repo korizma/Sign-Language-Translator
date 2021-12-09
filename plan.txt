@@ -1,0 +1,26 @@
+Projekat PFE:
+
+Nas projekat ce imati vise delova koje cemo raditi:
+
+Masinsko ucenje
+	1.	Pretvaranje dataseta u brojcane vrednosti (matrice velicine 200x200), treba napraviti funkciju
+	2.	Kreiranje neuronske mreze za prepoznavanje znaka
+
+Input:
+	3.	Moramo da ulaz kamere prebacimo u dobru dimenziju
+	4.	Smislimo na koliko sekundi ocemo da uzimamo slike iz kamere za prepoznavanje
+	5. 	Koriscenje gore navedene funkcije (1.) za prebacivanje u sliku dobrih dimenzija
+	6. 	Smisliti Interface za output, input	
+
+
+Sa bibliotekom PythonCV2 mozemo da ucitamo video i da ga resizujemo u velicinu 1000x1000piksela
+Nama je vazno da je velicina 1000x1000 pixela jer su nam 200x200 pixela velicine slike u datasetu
+Za sada nam je plan da svake 2 sekunde uzme sliku kamere i prebaci velicinu u 200x200px kako bi se poklapao slikama iz dataseta
+Posle konverzije dimenzija treba odrediti brojcane vrednosti za svaki piksel
+
+Neuralna mreza:
+
+Treba normalizovati podatke sve ako nisu da svi budu iz [0,1] kako ne bi bilo greske pri racunanju
+Onda treba smisliti hidden layere, koliko da ih imamo, koliko nodova
+
+I najvaznije napisati backpropagation za NN
